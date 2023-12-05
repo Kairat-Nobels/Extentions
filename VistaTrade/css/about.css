@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+a,
+span,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #232323;
+}
+
+.small-screen {
+  padding: 10px 30px;
+  gap: 10px;
+}
+
+.large-screen {
+  padding: 10px 90px;
+  gap: 30px;
+}
+
+body {
+  background: #999;
+}
+
+header {
+  background: #D9D9D9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+header .goBtn {
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background: #FFBA08;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+header .goBtn h2 {
+  color: #232323;
+  text-align: center;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+header a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+  padding-right: 10px;
+  background-color: #999;
+  gap: 4px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+header a div h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #CB0000;
+}
+header a div h3 span {
+  color: #CB0000;
+  font-size: 18px;
+  font-weight: 600;
+}
+header a div p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #FFBA08;
+}
+header a img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .head {
+  margin-top: 20px;
+  text-align: center;
+}
+main .head h1 {
+  color: #CB0000;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+main .head p {
+  color: #232323;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+main .slider {
+  margin-top: 30px;
+}
+main .slider h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #CB0000;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  margin: 10px 0 20px;
+}
+main .whatCan {
+  margin-top: 100px;
+}
+main .whatCan h2 {
+  text-align: center;
+  color: #CB0000;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+main .whatCan .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px auto;
+  width: 80%;
+}
+main .whatCan .icons .icon {
+  width: 292px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+main .whatCan .icons .icon img {
+  width: 40px;
+}
+main .whatCan .icons .icon h4 {
+  color: #232323;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.banner {
+  margin-top: 80px;
+  background-image: url(../icons/about/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -115px;
+  background-size: cover;
+  height: 500px;
+}
+.banner .wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+.banner h3 {
+  width: 80%;
+  text-align: center;
+  color: #FFBA08;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 50px auto 0;
+  padding-top: 30px;
+}
+.banner .browsers {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+.banner .browsers .item {
+  width: 60px;
+}
+.banner .browsers .item img {
+  width: 100%;
+}
+
+.footer {
+  padding: 30px 20px;
+  background: #181817;
+  margin-top: 50px;
+}
+.footer h3 {
+  text-align: center;
+  color: #FFBA08;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #CB0000;
+  text-align: center;
+}
+.footer p span {
+  color: #CB0000;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer .technology p {
+  text-align: center;
+  color: #FFBA08;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer .technology ul {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .technology ul li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #CB0000;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  #aboutCard, .largeScreen {
+    padding: 10px;
+    gap: 10px;
+  }
+}

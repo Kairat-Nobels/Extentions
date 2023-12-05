@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+a,
+span,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #232323;
+}
+
+.popupDiv {
+  width: 420px;
+  padding: 30px 20px;
+  background: #999;
+}
+.popupDiv .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popupDiv .head h1 {
+  color: #232323;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+.popupDiv .head h1 span {
+  color: #CB0000;
+}
+.popupDiv .head .head-img {
+  width: 100px;
+}
+.popupDiv .head .head-img img {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.popupDiv .content {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.popupDiv .content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 120px;
+}
+.popupDiv .content .item:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.popupDiv .content .item:hover h3 {
+  text-decoration: underline;
+  color: #FFBA08;
+}
+.popupDiv .content .item .itemImg {
+  width: 38px;
+}
+.popupDiv .content .item .itemImg img {
+  width: 100%;
+}
+.popupDiv .content .item h3 {
+  color: #FFBA08;
+  text-align: center;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

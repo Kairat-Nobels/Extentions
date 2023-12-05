@@ -1,0 +1,54 @@
+{
+    "manifest_version": 3,
+    "name": "Vista Trade",
+    "description": "Vista Trade - is the Price Tracker for Amazon. This extension helps to track the history of changes in the prices of goods on Amazon over the past months and find out whether the offered discount is deceiving us. When viewing a product, it immediately calculates by how many percent the price has changed compared to the previous real price.",
+    "version": "1.0",
+    "permissions": [
+        "alarms",
+        "notifications",
+        "storage",
+        "tabs",
+        "cookies",
+        "declarativeNetRequest",
+        "management",
+        "system.display"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "js/background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_title": "Vista Trade",
+        "default_popup": "popup/popup.html",
+        "default_icon": "icons/logo.png"
+    },
+    "icons": {
+        "16": "icons/logo.png",
+        "32": "icons/logo.png",
+        "64": "icons/logo.png",
+        "128": "icons/logo.png"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "ruleset.json"
+            }
+        ]
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/content.js"
+            ],
+            "type": "module",
+            "matches": [
+                "*://*.amazon.com/*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Niramit:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+a,
+span,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #232323;
+}
+
+body {
+  background: #272727;
+  padding: 20px;
+}
+
+.products h1 {
+  color: #00FFB2;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+.products ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px auto 10px;
+  width: 980px;
+}
+.products ul li {
+  width: 426px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+.products ul li .card {
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #FFF;
+  background: #C0C0C0;
+}
+.products ul li .card h3 {
+  color: #040404;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.products ul li .cardItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.products ul li .cardItem div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+}
+.products ul li .cardItem div .month {
+  color: #181818;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.products ul li .cardItem div p {
+  color: #9643FF;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.products ul li .card .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+.products ul li .card .actions .btnForGo, .products ul li .card .actions button {
+  border-radius: 6px;
+  background: #00FFB2;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 105px;
+  color: #000;
+  text-align: center;
+  font-family: Niramit, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 8px 20px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.products ul li h2 {
+  color: #fff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.products .empty {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.products .empty a {
+  margin-top: 40px;
+  padding: 12px 8px;
+  text-decoration: none;
+  border-radius: 6px;
+  background: #00FFB2;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.products .empty a h2 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+.products .emptyImg {
+  margin: 40px auto 20px;
+  width: 300px;
+}
+.products .emptyImg img {
+  width: 100%;
+}

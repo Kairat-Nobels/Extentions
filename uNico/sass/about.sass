@@ -1,0 +1,207 @@
+@import './libs/_normalize'
+.small-screen
+    padding: 10px 30px
+    gap: 10px
+.large-screen
+    padding: 10px 90px
+    gap: 30px
+
+body
+    background: $fon
+
+header
+    background: #9BA4B4
+    display: flex
+    position: sticky
+    top: 0
+    left: 0
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    z-index: 100
+    .goBtn
+        padding: 12px 22px
+        border-radius: 10px
+        text-align: center
+        border-radius: 8px
+        background: $fon
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+
+        h2
+            color: $black
+            text-align: center
+            font-family: Dosis, Arial, Helvetica, sans-serif
+            font-weight: 600
+
+    a
+        text-decoration: none
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 2px
+        padding-right: 10px
+        background-color: $fon
+        gap: 4px
+        border-radius: 10px
+        overflow: hidden
+        div
+            h3
+                font-size: 20px
+                font-weight: 600
+                color: $red
+                span
+                    color: $red
+                    font-size: 20px
+                    font-weight: 600
+            p
+                font-size: 16px
+                line-height: 22px
+                font-weight: 600
+                color: $black
+        img
+            width: 100px
+            border-radius: 10px
+
+.container
+    max-width: 1200px
+    padding: 0 10px
+    width: 100%
+    margin: 0 auto
+main
+    .head
+        margin-top: 20px
+        text-align: center
+        h1
+            color: $red
+            font-family: Dosis, Arial, Helvetica, sans-serif
+            font-size: 28px
+            font-weight: 600
+        p
+            color: $black
+            font-family: Dosis, Arial, Helvetica, sans-serif
+            font-size: 20px
+            line-height: 28px
+            font-weight: 600
+            margin-top: 10px
+
+    .slider
+        margin-top: 30px
+        h2
+            text-align: center
+            font-size: 24px
+            font-weight: 600
+            color: $red
+            font-family: Dosis, Arial, Helvetica, sans-serif
+            margin: 10px 0 20px
+
+    .whatCan
+        margin-top: 100px
+        h2
+            text-align: center
+            color: $red
+            font-family: Dosis, Arial, Helvetica, sans-serif
+            font-size: 22px
+            font-weight: 600
+        .icons
+            display: flex
+            justify-content: space-around
+            align-items: center
+            flex-wrap: wrap
+            gap: 50px
+            margin: 50px auto
+            width: 80%
+            .icon
+                width: 292px
+                display: flex
+                align-items: center
+                gap: 15px
+                margin-top: 20px
+                img
+                    width: 40px
+                h4
+                    color: $black
+                    font-family: Dosis, Arial, Helvetica, sans-serif
+                    font-size: 22px
+                    font-weight: 500
+                    font-size: 18px
+
+.banner
+    margin-top: 80px
+    background-image: url(../icons/about/background.jpg)
+    background-repeat: no-repeat
+    background-position: 0px -115px
+    background-size: cover
+    height: 500px
+    .wrapper
+        background: rgba(0, 0, 0, 0.4)
+        height: 100%
+
+    h3
+        width: 80%
+        text-align: center
+        color: #f2f2f2
+        font-family: Dosis, Arial, Helvetica, sans-serif
+        font-size: 22px
+        font-weight: 600
+        margin: 50px auto 0
+        padding-top: 30px
+
+    .browsers
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 25px
+        .item
+            width: 60px
+            img
+                width: 100%
+
+.footer
+    padding: 30px 20px
+    background: #9BA4B4
+    padding-top: 80px
+    h3
+        text-align: center
+        color: $fon
+        font-family: Dosis, Arial, Helvetica, sans-serif
+        font-size: 26px
+        font-weight: 600
+    p
+        font-size: 22px
+        font-weight: 500
+        margin-top: 30px
+        color: $red
+        text-align: center
+        span
+            color: $red
+            font-family: Dosis, Arial, Helvetica, sans-serif
+            font-size: 22px
+            font-weight: 600
+    .technology
+        p
+            text-align: center
+            color: $fon
+            font-family: Dosis, Arial, Helvetica, sans-serif
+            font-size: 26px
+            font-weight: 600
+
+        ul
+            margin: 30px 0
+            display: flex
+            flex-wrap: wrap
+            gap: 30px
+            align-items: center
+            justify-content: center
+            flex-wrap: wrap
+            li
+                font-size: 20px
+                font-weight: 500
+                margin-top: 30px
+                color: $red
+                margin-top: 10px
+
+@media (max-width: 768px)
+    #aboutCard, .largeScreen
+        padding: 10px
+        gap: 10px

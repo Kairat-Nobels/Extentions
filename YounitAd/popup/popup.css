@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --back: #144E47;
+    --text: #f2f2f2;
+    --ui: #999ec0;
+    --title: #f2f2f2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: var(--back);
+    color: var(--text);
+}
+
+.wrapper {
+    padding: 10px;
+    width: 390px;
+}
+
+
+.header {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 70px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #00FFB2;
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.domain {
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--title);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.blockAds_title {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+.content {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_text {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+#countActions {
+    color: var(--text);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.checkbox-wrapper-5 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 150px;
+}
+
+/* anime */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+
+/* Switch starts here */
+.rocker {
+    display: inline-block;
+    position: relative;
+
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+    width: 7em;
+    height: 4em;
+    overflow: hidden;
+    border-bottom: 0.5em solid #eee;
+}
+
+.rocker::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    border: 0.5em solid #eee;
+    border-bottom: 0;
+}
+
+.rocker input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-left,
+.switch-right {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: 3em;
+    transition: 0.2s;
+}
+
+.switch-left {
+    height: 2.4em;
+    width: 2.75em;
+    left: 0.85em;
+    bottom: 0.4em;
+    background-color: #ddd;
+    transform: rotate(15deg) skewX(15deg);
+}
+
+.switch-right {
+    right: 0.5em;
+    bottom: 0;
+    background-color: #bd5757;
+    color: #fff;
+}
+
+.switch-left::before,
+.switch-right::before {
+    content: "";
+    position: absolute;
+    width: 0.4em;
+    height: 2.45em;
+    bottom: -0.45em;
+    background-color: #ccc;
+    transform: skewY(-65deg);
+}
+
+.switch-left::before {
+    left: -0.4em;
+}
+
+.switch-right::before {
+    right: -0.375em;
+    background-color: transparent;
+    transform: skewY(65deg);
+}
+
+input:checked+.switch-left {
+    background-color: #0084d0;
+    color: #fff;
+    bottom: 0px;
+    left: 0.5em;
+    height: 2.5em;
+    width: 3em;
+    transform: rotate(0deg) skewX(0deg);
+}
+
+input:checked+.switch-left::before {
+    background-color: transparent;
+    width: 3.0833em;
+}
+
+input:checked+.switch-left+.switch-right {
+    background-color: #ddd;
+    color: #888;
+    bottom: 0.4em;
+    right: 0.8em;
+    height: 2.4em;
+    width: 2.75em;
+    transform: rotate(-15deg) skewX(-15deg);
+}
+
+input:checked+.switch-left+.switch-right::before {
+    background-color: #ccc;
+}
+
+/* Keyboard Users */
+input:focus+.switch-left {
+    color: #333;
+}
+
+input:checked:focus+.switch-left {
+    color: #fff;
+}
+
+input:focus+.switch-left+.switch-right {
+    color: #fff;
+}
+
+input:checked:focus+.switch-left+.switch-right {
+    color: #333;
+}

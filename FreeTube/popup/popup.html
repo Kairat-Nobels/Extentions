@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+  <title>FreeTube</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="logo"><img src="../images/logo.png" alt="img"></div>
+      <p class="domain"></p>
+    </header>
+    <section class="content">
+      <div class="blockAds">
+        <p class="blockAds_title">
+          FreeTube automatically blocks advertising on YouTube, and to work on other sites, control is carried out via a
+          switch.
+        </p>
+        <div class="checkbox-wrapper-5">
+          <div class="check">
+            <input id="check-5" type="checkbox" />
+            <label for="check-5"></label>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer class="footer">
+      <p class="footer_text">Number of blocked advertising domains on this page.</p>
+      <span id="countActions">0</span>
+    </footer>
+  </div>
+</body>
+<script src="./popup.js" type="module"></script>
+
+</html>

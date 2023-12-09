@@ -1,0 +1,63 @@
+{
+    "manifest_version": 3,
+    "name": "AdBlockify",
+    "description": "AdBlockify is an ad blocker extention for YouTube and more, as it blocks ads on other sites",
+    "version": "1.0.0",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "tabs",
+        "storage",
+        "alarms",
+        "notifications",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "js/background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "js/youtube.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_title": "AdBlockify",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "images/logo.png",
+            "32": "images/logo.png",
+            "64": "images/logo.png"
+        }
+    },
+    "icons": {
+        "16": "images/logo.png",
+        "32": "images/logo.png",
+        "64": "images/logo.png"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "default",
+                "enabled": true,
+                "path": "ruleset.json"
+            }
+        ]
+    }
+}

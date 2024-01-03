@@ -1,0 +1,54 @@
+{
+  "name": "FBStealthMode",
+  "description": "FBStealthMode is the extenntion that can hide your visiblity, and notify you when someone visit your profile",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "/img/logo.png",
+    "32": "/img/logo.png",
+    "48": "/img/logo.png",
+    "128": "/img/logo.png"
+  },
+  "action": {
+    "default_title": "FBStealthMode",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/img/logo.png",
+      "32": "/img/logo.png",
+      "48": "/img/logo.png",
+      "128": "/img/logo.png"
+    },
+    "icons": {
+      "16": "/img/logo.png",
+      "32": "/img/logo.png",
+      "48": "/img/logo.png",
+      "128": "/img/logo.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "background",
+    "tabs",
+    "alarms",
+    "notifications",
+    "cookies",
+    "system.display",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.facebook.com/*"
+  ],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "disable-csp",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

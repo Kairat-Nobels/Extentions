@@ -33,6 +33,10 @@
       "management",
       "declarativeNetRequest"
     ],
+    "background": {
+      "service_worker": "js/background.js",
+      "type": "module"
+  },
     "host_permissions": [
       "<all_urls>"
     ]

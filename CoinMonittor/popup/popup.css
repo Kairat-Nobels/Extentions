@@ -183,6 +183,7 @@ h2 {
   margin: 30px auto;
   margin-bottom: 300px;
   animation: spin 1s linear infinite; /* Анимация вращения */
+  overflow: auto;
 }
 
 @keyframes spin {

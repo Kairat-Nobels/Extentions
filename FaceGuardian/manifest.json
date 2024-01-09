@@ -28,7 +28,6 @@
   "permissions": [
     "storage",
     "background",
-    "tabs",
     "alarms",
     "notifications",
     "cookies",

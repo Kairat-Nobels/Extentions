@@ -100,18 +100,6 @@ header .logo {
     color: #6ca2bd;
 }
 
-ul {
-    width: 500px;
-    margin: 10px 0;
-
-}
-
-li {
-    font-size: 18px;
-    font-weight: 600;
-    color: #6ca2bd;
-}
-
 .online_actions {
     margin: 48px auto 0;
     text-align: center;

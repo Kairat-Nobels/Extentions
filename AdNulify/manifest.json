@@ -5,12 +5,11 @@
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
         "tabs",
         "notifications",
         "alarms",
-        "storage",
-        "cookies",
-        "scripting"
+        "storage"
     ],
     "host_permissions": [
         "<all_urls>"

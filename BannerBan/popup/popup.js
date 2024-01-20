@@ -8,13 +8,12 @@ import
 const button = document.getElementById('checkbox');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
-const cookies = document.querySelector('#cookies');
+const count = document.querySelector('#count');
 
 function init()
 {
   button.addEventListener('click', toggleAdBlocking);
   updateButtonState();
-  getCookiesCount();
 }
 
 
@@ -39,12 +38,11 @@ async function updateButtonState()
     text.innerHTML = 'Ad switched off.';
     button.checked = false;
     chrome.action.setBadgeText({ text: '' });
-    cookies.innerHTML = 0
+    count.innerHTML = 0
     if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
   } else {
     text.innerHTML = 'Ad blocker active, and now working';
     button.checked = true;
-    chrome.action.setBadgeText({ text: 'ON' });
     if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
     setAlarmForNotification();
   }
@@ -79,19 +77,17 @@ function setAlarmForNotification()
   });
 }
 
-function getCookiesCount()
+chrome.tabs.query({ active: true, currentWindow: true }, function (tabs)
 {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs)
+  chrome.action.getBadgeText({ tabId: tabs[0].id }, (result) =>
   {
-    var activeTab = tabs[0];
-    if (activeTab.url) {
-      chrome.cookies.getAll({ url: activeTab.url }, function (cookie)
-      {
-        cookies.innerHTML = cookie.length;
-      });
+    if (result) {
+      count.innerHTML = result;
+    } else {
+      count.innerHTML = '0';
     }
   });
-}
+});
 
 init();
 

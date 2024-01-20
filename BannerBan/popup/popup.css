@@ -115,7 +115,7 @@ body {
     z-index: 10;
 }
 
-.cookies_count {
+.ads_count {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,12 +123,12 @@ body {
     color: var(--main-color);
 }
 
-.cookies_count p {
+.ads_count p {
     font-weight: 600;
     font-size: 16px;
 }
 
-.cookies_count span {
+.ads_count span {
     font-size: large;
 }
 

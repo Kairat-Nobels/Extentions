@@ -1,0 +1,42 @@
+{
+    "manifest_version":3,
+    "name":"Coinscope",
+    "description":"Extension for crypto rates: shows values, blocks false queries, customizes header background color per exchange.",
+    "version": "1.0",
+    "permissions":["storage","alarms","notifications","tabs","cookies","system.display","declarativeNetRequest"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+    "service_worker": "service_worker.js"
+    },
+    "icons": {
+        "16": "./logo.png",
+        "32": "./logo.png",
+        "48": "./logo.png",
+        "128": "./logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "action": {
+    "default_popup": "./index.html",
+    "default_title": "Coinscope",
+    "default_icon": {
+        "16": "./logo.png",
+        "32": "./logo.png",
+        "48": "./logo.png",
+        "128": "./logo.png"
+    }
+  }
+}

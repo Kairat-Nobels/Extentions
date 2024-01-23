@@ -1,0 +1,174 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Basic&display=swap";
+
+.wrapper {
+    padding: 70px 20px 10px 15px;
+    background: #fff;
+}
+
+.selects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.selects>div {
+    width: 75%;
+}
+
+.selects>img {
+    width: 30px;
+}
+
+.selects>div>div {
+    margin-bottom: 0;
+}
+
+.exchange {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.exchange_text {
+    border-radius: 4px;
+    padding: 3px;
+    background: gold;
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+    max-width: 97%;
+}
+
+.css-fvipm8 {
+    border-radius: 9px !important;
+    background: #D7FD73 !important;
+    color: #203136 !important;
+}
+
+._coins_q0dkm_2 label {
+    left: -5px !important;
+    background: #D7FD73 !important;
+    padding: 0 6px;
+    top: -3px !important;
+    font-size: 1.4rem !important;
+    color: #203136 !important;
+    font-family: Basic, sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+._coins_q0dkm_2>div {
+    border-radius: 9px;
+}
+
+._coin_q0dkm_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._coin_q0dkm_2 img {
+    width: 24px;
+    height: 24px;
+}
+
+._currencys_p103d_5 label {
+    left: -5px !important;
+    background: #D7FD73 !important;
+    padding: 0 6px;
+    top: -3px !important;
+    font-size: 1.4rem !important;
+    color: #203136 !important;
+    font-family: Basic, sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+._currencys_p103d_5>div {
+    border-radius: 9px;
+}
+
+._currency_p103d_5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+._currency_p103d_5 img {
+    width: 24px;
+    height: 24px;
+}
+
+.link {
+    text-decoration: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.ant-table-cell {
+    background: #203136 !important;
+    color: #fff !important;
+    font-family: Poppins, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.ant-table-thead .ant-table-cell {
+    font-weight: 600 !important;
+    color: #d7fd73 !important;
+}
+
+.img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.trust-score.green {
+    color: #00fd98;
+}
+
+.trust-score.red {
+    color: #ffa800;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.MuiPopover-root ul {
+    background: #D7FD73;
+    color: #203136;
+    font-family: Basic, sans-serif;
+    font-weight: 600;
+}
+
+.MuiPopover-root ul li:hover {
+    background-color: #0000003b;
+}

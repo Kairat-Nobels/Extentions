@@ -3,20 +3,6 @@ const div = document.querySelector('#aboutCard')
 const desc = document.querySelector('#description')
 const footerUl = document.querySelector('footer').querySelector('ul')
 const vers = document.querySelector('#version')
-// render info about extension
-chrome.management.getSelf(function (info)
-{
-    console.log(info);
-    div.querySelector('h3').innerText = info.shortName;
-    desc.innerText = info.description;
-    vers.innerText = info.version;
-    div.querySelector('img').src = info.icons[3].url;
-    for (let i = 0; i < info.permissions.length; i++) {
-        const li = document.createElement('li');
-        li.innerText = info.permissions[i]
-        footerUl.appendChild(li);
-    }
-});
 
 //adaptive page by chanhing dispay width
 function getWidth()

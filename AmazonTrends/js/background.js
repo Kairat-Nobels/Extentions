@@ -55,11 +55,11 @@ function sendNotificationWithButtons(visitedCount)
     chrome.notifications.create('notificationWithButtons', {
         type: 'basic',
         iconUrl: '../icons/logo.png',
-        title: 'Amazon price trends',
+        title: 'uNico',
         message: `Today you've viewed ${visitedCount} products on Amazon.`,
         buttons: [
             { title: 'Close' },
-            { title: 'View Products' }
+            { title: 'Products' }
         ],
         silent: false
     });

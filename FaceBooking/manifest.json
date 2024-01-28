@@ -1,6 +1,6 @@
 {
   "name": "FaceBooking",
-  "description": "Shows friends from Facebook. Makes a hidden online mode on facebook",
+  "description": "Shows friends from Facebook. Use extention for see your profile with extention",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
